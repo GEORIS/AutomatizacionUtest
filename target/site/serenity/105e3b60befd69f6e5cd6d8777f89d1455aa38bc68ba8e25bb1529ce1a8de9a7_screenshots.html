@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="46d27b02c0dd900e6dcdd2527a2ef909b8b128fe28a1c3d8e2bcc8ce53abc000.html">Create A New User</a></span>
+                > <span class="truncate-60"><a
+                    href="105e3b60befd69f6e5cd6d8777f89d1455aa38bc68ba8e25bb1529ce1a8de9a7.html">create a new user to enter the Utest page </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-09-2022 15:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Create A New User </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user, I want to learn hot to automate in scremplay at the Choucair Academy with the automation course
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">create a new user to enter the Utest page
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e93709d1cf4684ee880ab32b125aef0a58b5034aab41c09c95b881d00c71de5a.png" title=" Given create a new user for the page Utest" width="1920"/>
+                <img src="e93709d1cf4684ee880ab32b125aef0a58b5034aab41c09c95b881d00c71de5a.png" title=" Georis open up" width="1920"/>
+                <img src="e93709d1cf4684ee880ab32b125aef0a58b5034aab41c09c95b881d00c71de5a.png" title=" Georis opens the Utest page" width="1920"/>
+                <img src="299a4a630f165718fcc77073d88b844c7d2df94afb95eb67921992c9ccbd4752.png" title=" Georis clicks on Boton para empezar el registro de un nuevo usuario" width="1920"/>
+                <img src="299a4a630f165718fcc77073d88b844c7d2df94afb95eb67921992c9ccbd4752.png" title=" Georis open up (completed)" width="1920"/>
+                <img src="a7b043834f32923a8ea5b701f8accc0de21bda22dc778f573b6b08ef59eff52a.png" title=" Given create a new user for the page Utest (completed)" width="1920"/>
+                <img src="b0b3123133391f5caf6b766d6653ec76e3b91507395da05898bef93ef1977667.png" title=" When the user enters the required data in the form
+| strFirstName | strLastName | strEmail | strBirthDayMonth | getStrBirthDayDay | getStrBirthDayYear | StrLanguajesSpoken | strCityName | strPostalCode | strCountryName | StrComputerSo | StrComputerVersion | StrLanguaje | StrTypeMovil | StrModelMovil | StrMovilSo | StrPassword |
+| Isaias | Asis | iasis@gmail.com | January | 14 | 2000 | Spanish | Barranquilla | 080004 | Colombia | Windows | Windows 11 pro | Spanish | Xiaomi | Mi 11T | Android 12 | Geo1234556 |" width="1920"/>
+                <img src="b0b3123133391f5caf6b766d6653ec76e3b91507395da05898bef93ef1977667.png" title=" Georis fill data" width="1920"/>
+                <img src="b0b3123133391f5caf6b766d6653ec76e3b91507395da05898bef93ef1977667.png" title=" Georis enters 'Isaias' into Ingresar el primer nombre del usuario" width="1920"/>
+                <img src="a50263030d0ac4c0dc63ca589b5d1c24c55bfb363fdb4c856dc7f1970cbf10e0.png" title=" Georis enters 'Asis' into Ingresar el apellido del usuario" width="1920"/>
+                <img src="1236ef1345efc3471268f7d6a04c8539beb7398720bbda57e3f5897bff2691af.png" title=" Georis enters 'iasis@gmail.com' into Ingresar el correo del usuario" width="1920"/>
+                <img src="47a0784220c1d689d8e0b40b14950a01a8f85d17a01737a5a1080591e736e0e3.png" title=" Georis select January on Ingresar el mes de cumplea&Atilde;&plusmn;os del usuario" width="1920"/>
+                <img src="e11725c67c391e155e2300a27ead7cceb2faccb04e08112513e0b93d559f67af.png" title=" Georis select 14 on Ingresar el dia de cumplea&Atilde;&plusmn;os del usuario" width="1920"/>
+                <img src="568b801694b2fb0bbecc5856fd0827012c76062c7be09bbbe170beb3abede59f.png" title=" Georis select 2000 on Ingresar el a&Atilde;&plusmn;o de cumplea&Atilde;&plusmn;os del usuario" width="1920"/>
+                <img src="d9744a053b7ff5edc1923a07732715d93f496d2f9656459435f062b3dd99967a.png" title=" Georis clicks on Agregar idioma hablado" width="1920"/>
+                <img src="67e70a7a8dfdb089f7d0408d6cd0e0fcf2394c29559ff0ed7a13fb4c1806467c.png" title=" Georis enters 'Spanish' then hits ARROW_DOWN and ENTER into Seleccionar espa&Atilde;&plusmn;ol como otro idioma" width="1920"/>
+                <img src="8c38e782be16759cf5d204df2e174023f52ee2695a07e2c5d9840a9379b2a5ad.png" title=" Georis clicks on Boton para seguir con el formulario de ubicacion" width="1920"/>
+                <img src="8c38e782be16759cf5d204df2e174023f52ee2695a07e2c5d9840a9379b2a5ad.png" title=" Georis fill data (completed)" width="1920"/>
+                <img src="50d753ded4f18c64a08015da622a22a3d856df71d46ee7d99e42bd76a532f965.png" title=" Georis fill location" width="1920"/>
+                <img src="50d753ded4f18c64a08015da622a22a3d856df71d46ee7d99e42bd76a532f965.png" title=" Georis enters 'Barranquilla' into Ingresar el nombre de la ciudad de residencia del usuario" width="1920"/>
+                <img src="738dab95cdddd3d646d8e648589d1a29fa521a2280c46e46f00ca479c9ee8828.png" title=" Georis types 'ARROW_DOWN' in Ingresar el nombre de la ciudad de residencia del usuario" width="1920"/>
+                <img src="0f3ff5467f6342976030543b10e81f58bb01b57a9f1fcf747ecff55a7fce149c.png" title=" Georis types 'ENTER' in Ingresar el nombre de la ciudad de residencia del usuario" width="1920"/>
+                <img src="02f138d35fe4ff432bded3e9326e950c59d3c65bf0394cf33eedc9cbe48f3515.png" title=" Georis enters '080004' into Ingresar el codigo postal de la ciudad de residencia del usuario" width="1920"/>
+                <img src="77141ce00a4f3ec85cf56b779e32a60a656664a70ced98d1e41d7ba63e3a329e.png" title=" Georis clicks on Contenedor del pais de residencia del usuario" width="1920"/>
+                <img src="f245e5e59859eab2f74df9b283ead75351da0d7996a1fb273f4a5dc85c284d03.png" title=" Georis enters 'Colombia' then hits ARROW_DOWN and ENTER into Seleccionar pais de residencia del usuario" width="1920"/>
+                <img src="0edd8c04e0c56902318056e28f3667404d19809d6123ab913e72a2d32f4867ec.png" title=" Georis clicks on Boton next Devices" width="1920"/>
+                <img src="0edd8c04e0c56902318056e28f3667404d19809d6123ab913e72a2d32f4867ec.png" title=" Georis fill location (completed)" width="1920"/>
+                <img src="498e5b7fa83f54236060851cc1793f91a80030e73340a69c7c2907c0ae31f6dc.png" title=" Georis fill device" width="1920"/>
+                <img src="498e5b7fa83f54236060851cc1793f91a80030e73340a69c7c2907c0ae31f6dc.png" title=" Georis clicks on Contenedor SO Computador" width="1920"/>
+                <img src="329bdb956a082b3c29d22bde40a7a10527c42b20fc8213c905ce4a2003b0c147.png" title=" Georis enters 'Windows' then hits ARROW_DOWN and ENTER into Seleccionar SO de computador" width="1920"/>
+                <img src="72e39b125e0cf23194d8af5eb54decd32bdda8de966e5281f4c23ea1538e995b.png" title=" Georis clicks on Contenedor Version del Computador" width="1920"/>
+                <img src="4accef877202d9b87963af3ac6a8df927e65c806d3f7c1cc2b16322a4fce7786.png" title=" Georis enters 'Windows 11 pro' then hits ARROW_DOWN and ENTER into Seleccionar la version del computador" width="1920"/>
+                <img src="fc100d1b9413c387506273b2fe92b32b4facf90165003e928274455d7acb6a7e.png" title=" Georis clicks on Contenedor Lenguaje Computador" width="1920"/>
+                <img src="7d686a8468d92e4a49c2d4a6ca45cac8e37c869d91a6027f99f1cce2f5851007.png" title=" Georis enters 'Spanish' then hits ARROW_DOWN and ENTER into Seleccionar el lengiuaje de computador" width="1920"/>
+                <img src="2b6793e9f6e4f97fea97a51225dc5f280903f718147356d0def74279ce399b5b.png" title=" Georis clicks on Contenedor Telefono celular" width="1920"/>
+                <img src="441c6dc257107aedd1eb5f8fac4fdcb46471546412144c7ecc9df351de27f77a.png" title=" Georis enters 'Xiaomi' then hits ARROW_DOWN and ENTER into Seleccionar marca de telefono celular" width="1920"/>
+                <img src="dfe3e5eeff184b0e75b4412201b97e17c88c4b3677003c5c0ba9c545733d0d7e.png" title=" Georis clicks on Contenedor Modelo del celular" width="1920"/>
+                <img src="7ecd86dccd3243317eef8a3c6a365f76763398177c8dc7c7aa8ee188f40f558d.png" title=" Georis enters 'Mi 11T' then hits ARROW_DOWN and ENTER into Seleccionar el modelo del celular" width="1920"/>
+                <img src="dec2ce0df907a30af20ebbf81af582cc609bcf3c14ad3e065ee214af8a9f0764.png" title=" Georis clicks on Contenedor SO del celular" width="1920"/>
+                <img src="c54d8708051f4beae1fca77e4711f04dd0cf1b873ad7f6ed38e0d76c5d8475a6.png" title=" Georis enters 'Android 12' then hits ARROW_DOWN and ENTER into Seleccionar sistema operativo del celular" width="1920"/>
+                <img src="59eb7f87db0094b6b23473e524f14f1f2388c143184a70bfb6083b006585b09a.png" title=" Georis clicks on Boton para ultimos pasos" width="1920"/>
+                <img src="59eb7f87db0094b6b23473e524f14f1f2388c143184a70bfb6083b006585b09a.png" title=" Georis fill device (completed)" width="1920"/>
+                <img src="d5967096fb0eb57691656ab2dbc7521e486de2e9c8d108f90cc350b7fbd91f69.png" title=" Georis fill password page" width="1920"/>
+                <img src="d5967096fb0eb57691656ab2dbc7521e486de2e9c8d108f90cc350b7fbd91f69.png" title=" Georis enters 'Geo1234556' into Crear la contrase&Atilde;&plusmn;a del usuario en Utest" width="1920"/>
+                <img src="b9ff3482a1a02f0c04569602a90b79fb236734b5a9038be7203f27a536864819.png" title=" Georis enters 'Geo1234556' into Confirmacion de contrase&Atilde;&plusmn;a creada" width="1920"/>
+                <img src="56f2276e23f62ae977de0a8edd7e47663c9ff7f033ba52acacf2d4f9febdec09.png" title=" Georis clicks on Opcion por si el usuario quiere mantenerse informado de proyectos de Utest" width="1920"/>
+                <img src="c892119a6404a3d3cc6769be3afbfd7b1af415f444a35b947682ef57b32319ba.png" title=" Georis clicks on Opcion para aceptar terminos de uso de utest" width="1920"/>
+                <img src="8d1218a5703202fc624cbb56659d8bf6b1e7e8cef037346e99d6423f2026216e.png" title=" Georis clicks on Opcion para aceptar politicas de seguridad y privacidad" width="1920"/>
+                <img src="67d4584fc3e97774e6ef5eb15dd951714fef0cc5eec1ef9dbbb916c74d015dc3.png" title=" Georis clicks on Boton para confirmar la creacion de usuario" width="1920"/>
+                <img src="67d4584fc3e97774e6ef5eb15dd951714fef0cc5eec1ef9dbbb916c74d015dc3.png" title=" Georis fill password page (completed)" width="1920"/>
+                <img src="67d4584fc3e97774e6ef5eb15dd951714fef0cc5eec1ef9dbbb916c74d015dc3.png" title=" When the user enters the required data in the form
+| strFirstName | strLastName | strEmail | strBirthDayMonth | getStrBirthDayDay | getStrBirthDayYear | StrLanguajesSpoken | strCityName | strPostalCode | strCountryName | StrComputerSo | StrComputerVersion | StrLanguaje | StrTypeMovil | StrModelMovil | StrMovilSo | StrPassword |
+| Isaias | Asis | iasis@gmail.com | January | 14 | 2000 | Spanish | Barranquilla | 080004 | Colombia | Windows | Windows 11 pro | Spanish | Xiaomi | Mi 11T | Android 12 | Geo1234556 | (completed)" width="1920"/>
+                <img src="2b698740c297c6351175cc6a78c4419fe5f4bf8c3b4a3293f93c3ea37fa29bca.png" title=" Then ends with user registration
+| StrFinalText |
+| Complete Setup |" width="1920"/>
+                <img src="2b698740c297c6351175cc6a78c4419fe5f4bf8c3b4a3293f93c3ea37fa29bca.png" title=" Then response" width="1920"/>
+                <img src="2b698740c297c6351175cc6a78c4419fe5f4bf8c3b4a3293f93c3ea37fa29bca.png" title=" Then ends with user registration
+| StrFinalText |
+| Complete Setup | (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
