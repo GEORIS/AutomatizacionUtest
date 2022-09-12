@@ -1,7 +1,7 @@
 # Autor: Georis Manuel Blanco Escobar
 @stories
 Feature: create a new user
-  As a user, I want to learn hot to automate in scremplay at the Choucair Academy with the automation course
+  We are looking to create a new user on the Utest.com page
   @scenario1
   Scenario: create a new user to enter the Utest page
     Given create a new user for the page Utest
